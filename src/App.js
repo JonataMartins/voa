@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 
 import Home from './components/pages/Home';
 import Projetos from './components/pages/Projetos';
-import Contato from './components/pages/Contato';
 import Sobre from './components/pages/Sobre';
 import Manutencao from './components/pages/Manutencao'
 import IFantasy from './components/pages/IFantasy';
@@ -49,7 +48,6 @@ function App() {
 
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Projetos" element={<Projetos />} />
-          <Route exact path="/Contato" element={<Contato />} />
           <Route exact path="/Sobre" element={<Sobre />} />
           <Route exact path="/Arte de Caderno" element={<Manutencao />} />
           <Route exact path="/Abacaxi de Ouro" element={<Manutencao />} />
