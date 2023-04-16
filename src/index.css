@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Fasthand', cursive, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body,
+html,
+#root {
+  background-color: rgb(32, 32, 32);
+  color: #fefefe;
+  height: 100%;
+}

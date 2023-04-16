@@ -1,0 +1,65 @@
+.IFashion {
+    margin-top: 4em;
+    color: #000000;
+    background:linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.616)), url(../../img/woman.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.IFashion span{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.IFashion h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+    font-family: 'Sacramento', cursive;
+    backdrop-filter: blur(30px);
+    
+}
+
+.IFashion .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+}
+
+.IFashion .galeria img{
+    border-radius: 3%;
+    width: 20em;
+    height: auto;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-left: 0.5em;
+    transition: all ease 0.4s;
+    transform: scale(1);
+    
+}
+
+.IFashion .galeria button:hover{
+    filter: grayscale(0);
+    transform: scale(1.3);
+    transition: all ease 0.4s;
+    z-index: 2;
+    
+}
+
+.IFashion button{
+    border: transparent;
+    background-color: transparent ! important;
+}
+
+
+
+

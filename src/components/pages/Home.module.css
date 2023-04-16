@@ -1,0 +1,53 @@
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+
+.title span {
+    color: #fded17;
+    font-family: 'Pacifico', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(.215, .61, .355, 1.000) 5ms both;
+    animation: tracking-in-expand 2s cubic-bezier(.215, .61, .355, 1.000) 5ms both
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/logo_voa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 90%;
+    height: 100vh;
+    margin: 2em;
+    margin-top: 6em;
+
+}
