@@ -42,7 +42,9 @@ function Projetos() {
 
                         <h2>Arte de <span>Caderno</span></h2>
                         <p>O Arte de Caderno é um projeto educativo que tem alcance em todo o território nacional. Esse projeto é realizado através de um concurso que tem como objetivo resgatar desenhos belos e curiosos <span>, além de incentivar a preservação das escolas e a consciência de que desenhos devem ser feitos em suportes adequados, não em paredes e carteiras, evitando danos ao patrimônio público, sobrecarga de profissionais da limpeza e gastos financeiros com produtos de limpeza e reparos.</span></p>
-                        <Link to='/Arte de Caderno'><button onClick={subir} className={styles.bArte}>Ver mais</button></Link>
+                        
+                        
+                        <Link  target="_blank" to={"https://artedecaderno.ifsuldeminas.edu.br"}><button onClick={subir} className={styles.bArte}>Ver mais</button></Link>
 
                     </div>
 
@@ -75,7 +77,12 @@ function Projetos() {
                         <p>
                             O "Abacaxi de Ouro" é um festival de cinema amador escolar e realiza edições anuais. O projeto tem uma abordagem ampla, que busca não apenas premiar produções cinematográficas escolares, mas também oferecer capacitações e formação ao longo do ano letivo. <span className={styles.ocult}> As atividades incluem a produção de cinema amador, moda e figurinos, uso de tecnologias como edição de vídeos, mídias sociais e fotografia, além de vivências na produção de roteiros e experimentações na produção de eventos culturais.</span>
                         </p>
-                        <Link to={"/Abacaxi de Ouro"}><button onClick={subir}>Veja mais</button></Link>
+
+                        <Link target='_blank' to={"https://abacaxideouro.netlify.app"}><button onClick={subir} className={styles.bAbacaxi}>Veja mais</button></Link>
+
+                        
+                        
+
                     </div>
                 </div>
 

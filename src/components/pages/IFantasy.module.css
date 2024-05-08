@@ -1,14 +1,15 @@
-.IFantasy{
+.IFantasy {
     margin-top: 4em;
     background-color: #cc080a;
     color: #ffffff;
-    background:linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.616)), url(../../img/cortina.jpg) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url(../../img/cortina.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
+    height: 90vh;
 }
 
-.IFantasy h1{
+.IFantasy h1 {
     text-align: center;
     margin-top: 1.4em;
     margin-bottom: 1em;
@@ -18,7 +19,7 @@
 }
 
 .IFantasy p {
-    text-indent:2em;
+    text-indent: 2em;
     backdrop-filter: blur(50px);
     text-align: justify;
     margin-top: 1em;
@@ -28,7 +29,7 @@
 
 }
 
-.IFantasy img{
+.IFantasy img {
     height: 25em;
     width: auto;
     border-radius: 5%;
@@ -39,7 +40,7 @@
 
 
 
-.IFantasy div{
+.IFantasy div {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -48,17 +49,26 @@
     margin-bottom: 2em;
     backdrop-filter: blur(30px);
 
-    
+
 }
 
 
 @media (max-width: 1130px) {
     .IFantasy div {
-      flex-direction: column;
+        flex-direction: column;
+        height: auto;
     }
-    .IFantasy img{
+
+    .IFantasy img {
         height: auto;
         width: 100%;
-      }
-  }
-  
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .IFantasy {
+        margin-top: 3em;
+        height: auto;
+    }
+
+}

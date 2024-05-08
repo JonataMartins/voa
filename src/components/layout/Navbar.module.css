@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
@@ -10,11 +10,11 @@
     transition: all ease 0.4s;
     height: 5em;
 
-    
+
 }
 
 
-.ativaCor{
+.ativaCor {
 
     margin: 0 auto;
     flex-wrap: wrap;
@@ -22,88 +22,94 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    background-color: rgba(0,0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 1em;
     width: 100%;
     transition: all ease 0.4s;
     z-index: 999;
     height: 4.5em;
-    
+
 }
 
-.ativaCor{
+.ativaCor {
     font-size: 0.7em;
 }
 
-.img{
+.img {
     width: 3em;
     height: 3em;
 }
 
-.list{
+.list {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.item, .itemIFantasy, .itemIFashion, .itemExpoArte{
+.item,
+.itemIFantasy,
+.itemIFashion,
+.itemExpoArte {
     margin-right: 1em;
     font-size: 2em;
-    
+
 }
 
-li{
+li {
     list-style: none;
 }
 
-.item a{
+.item a {
     font-size: 1em;
     color: #fefefe;
     text-decoration: none;
-    font-family: 'Pacifico','Fasthand';
+    font-family: 'Pacifico', 'Fasthand';
 }
 
-.item a:hover{
-    color: #85badf;
+.item a:hover {
+    color: #FEED17;
 }
 
-.itemH{
+.itemH {
     display: none;
 }
 
 
 @media screen and (max-width: 740px) {
 
-    .img{
+    .img {
         display: none;
     }
-    
-  }
 
-  @media screen and (max-width: 500px) {
+}
 
-    .navbar,.navbarIFantasy,.navbarExpoArte,.navbarIFashion{
+@media screen and (max-width: 500px) {
+
+    .navbar,
+    .navbarIFantasy,
+    .navbarExpoArte,
+    .navbarIFashion {
         font-size: 0.7em;
         height: 4.5em;
     }
-    
-  }
+
+}
 
 
-  /*ITEM TESTE*/
+/*ITEM TESTE*/
 
-.itemIFantasy a{
+.itemIFantasy a {
     font-size: 1em;
     color: #fefefe;
     text-decoration: none;
-    font-family: 'Pacifico','Fasthand';
+    font-family: 'Pacifico', 'Fasthand';
 }
 
-.itemIFantasy a:hover{
+.itemIFantasy a:hover {
     color: #d6b363;
 }
 
-.navbarIFantasy{
+.navbarIFantasy {
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
@@ -115,28 +121,28 @@ li{
     transition: all ease 0.4s;
     height: 5em;
     background-color: #a2150d;
-    
+
 }
 
-.navbarIFantasy .itemIFantasy a:hover{
+.navbarIFantasy .itemIFantasy a:hover {
     color: #d6b363;
 }
 
 
 /*IFashion */
 
-.itemIFashion a{
+.itemIFashion a {
     font-size: 1em;
     color: #fefefe;
     text-decoration: none;
-    font-family: 'Pacifico','Fasthand';
+    font-family: 'Pacifico', 'Fasthand';
 }
 
-.itemIFashion a:hover{
+.itemIFashion a:hover {
     color: #585858;
 }
 
-.navbarIFashion{
+.navbarIFashion {
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
@@ -148,26 +154,26 @@ li{
     transition: all ease 0.4s;
     height: 5em;
     background-color: #000000;
-    
+
 }
 
-.navbarIFashion .itemIFashion a:hover{
+.navbarIFashion .itemIFashion a:hover {
     color: #585858;
 }
 
 
 /*ExpoArte */
 
-.itemExpoArte a{
+.itemExpoArte a {
     font-size: 1em;
     color: #fefefe;
     text-decoration: none;
-    font-family: 'Pacifico','Fasthand';
+    font-family: 'Pacifico', 'Fasthand';
 }
 
 
 
-.navbarExpoArte{
+.navbarExpoArte {
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
@@ -178,10 +184,10 @@ li{
     position: fixed;
     transition: all ease 0.4s;
     height: 5em;
-    background-color: #131313;
-    
+    background-color: #048ABF;
+
 }
 
-.navbarExpoArte .itemExpoArte a:hover{
-    color: #4590ff;
+.navbarExpoArte .itemExpoArte a:hover {
+    color: #035757;
 }

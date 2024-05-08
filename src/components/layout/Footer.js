@@ -1,4 +1,4 @@
-import{FaFacebook, FaInstagram} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import logoIF from '../../img/logo_IF.png'
 
@@ -7,31 +7,46 @@ import styles from './Footer.module.css';
 var local = (window.location.pathname);
 var na = styles.footer;
 
-if(local === "/" ){
+if (local === "/") {
     na = styles.footer;
 }
 
-if(local === "/sobre" ){
+if (local === "/sobre") {
     na = styles.footer;
 }
 
-if(local === "/projetos"){
+if (local === "/projetos") {
     na = styles.footer;
 
 }
 
-if(local === "/IFantasy"){
+if (local === "/IFantasy") {
     na = styles.footerIFantasy;
 }
 
-if(local === "/IFantasyGaleria"){
+if (local === "/IFantasyGaleria") {
     na = styles.footerIFantasy;
-}   
+}
 
+if (local === "/ExpoArte") {
+    na = styles.footerExpoArte;
+}
 
-function Footer(){   
+if (local === "/ExpoArteGaleria") {
+    na = styles.footerExpoArte;
+}
 
-    return(
+if (local === "/IFashion") {
+    na = styles.footerIFashion;
+}
+
+if (local === "/IFashionGaleria") {
+    na = styles.footerIFashion;
+}
+
+function Footer() {
+
+    return (
 
         <footer className={na}>
             <ul>
@@ -41,7 +56,7 @@ function Footer(){
             </ul>
 
             <p className={styles.copy}><span>Voa</span> &copy; 2023 </p>
-            <Link target="_blank" to={"https://portal.pcs.ifsuldeminas.edu.br"}><img src={logoIF} alt="Logo do IF"/></Link>
+            <Link target="_blank" to={"https://portal.pcs.ifsuldeminas.edu.br"}><img src={logoIF} alt="Logo do IF" /></Link>
         </footer>
     )
 

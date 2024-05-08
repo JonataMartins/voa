@@ -46,13 +46,20 @@ function Navbar( {acao}) {
                 <li ><Link to="/"><img className={styles.img} src={logo} alt="Voa" /></Link></li>
                 
                 <ul className={styles.list}>
-                    <li onClick={subir} className={styles.item}><Link to="/">Home</Link></li>
+                    
+                    <li onClick={subir} className={l === 0 ? styles.item : styles.itemH}><Link to="/">Home</Link></li>   
                     <li onClick={subir} className={l === 0 ? styles.item : styles.itemH}><Link to="/Projetos">Projetos</Link></li>                   
                     <li onClick={subir} className={l === 0 ? styles.item : styles.itemH}><Link to="/Sobre">Sobre</Link></li>
+
+                    <li onClick={subir}  className={l === 1 ? styles.itemIFantasy : styles.itemH}><Link to="/">Voa</Link></li>
                     <li onClick={subir}  className={l === 1 ? styles.itemIFantasy : styles.itemH}><Link to="/IFantasy">IFantasy</Link></li>
                     <li onClick={subir}  className={l === 1 ? styles.itemIFantasy : styles.itemH}><Link to="/IFantasyGaleria">Galeria</Link></li>
+
+                    <li onClick={subir}  className={l === 2 ? styles.itemIFashion : styles.itemH}><Link to="/">Voa</Link></li>
                     <li onClick={subir}  className={l === 2 ? styles.itemIFashion : styles.itemH}><Link to="/IFashion">IFashion</Link></li>
                     <li onClick={subir}  className={l === 2 ? styles.itemIFashion : styles.itemH}><Link to="/IFashionGaleria">Galeria</Link></li>
+
+                    <li onClick={subir}  className={l === 3 ? styles.itemExpoArte : styles.itemH}><Link to="/">Voa</Link></li>
                     <li onClick={subir}  className={l === 3 ? styles.itemExpoArte : styles.itemH}><Link to="/ExpoArte">ExpoArte</Link></li>
                     <li onClick={subir}  className={l === 3 ? styles.itemExpoArte : styles.itemH}><Link to="/ExpoArteGaleria">Galeria</Link></li>
 

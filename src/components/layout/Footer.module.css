@@ -1,12 +1,10 @@
-.footer{
-    display:flex;
+.footer {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
     align-items: center;
-    
-    background-color: #080808;
+    background-color: #569ece;
     color: #fefefe;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -18,67 +16,57 @@
     width: auto;
 }
 
-.footer img{
+.footer img {
     width: 4em;
     height: auto;
 }
 
-.footer ul{
+.footer ul {
     text-decoration: none;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     list-style-type: none;
     justify-content: center;
 
 }
 
-.footer ul li{
+.footer ul li {
     margin: 0 1em;
 }
 
-.footer ul li:hover{
-    color: #fded17 ;
+.footer ul li:hover {
+    color: #fded17;
 }
 
-.footer ul svg{
+.footer ul svg {
     font-size: 1.5em;
     cursor: pointer;
     color: #fefefe;
 }
 
-.footer ul svg:hover{
+.footer ul svg:hover {
     cursor: pointer;
     color: #fded17;
 }
 
 
-.copy{
+.copy {
     margin-top: 1em;
     font-size: 1.1em;
 }
 
-.copy span{
-    font-family:'Pacifico','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.copy span {
+    font-family: 'Pacifico', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fded17;
 }
 
-
-
-@media screen and (max-width: 645px) {
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-  }
-
-
-  .footerIFantasy{
-    display:flex;
+.footerIFantasy {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color:#a10809;
+    background-color: #a10809;
     color: #fefefe;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -89,36 +77,138 @@
     width: 100%;
 }
 
-.footerIFantasy img{
+.footerIFantasy img {
     width: 4em;
     height: auto;
 }
 
-.footerIFantasy ul{
+.footerIFantasy ul {
     text-decoration: none;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     list-style-type: none;
     justify-content: center;
 
 }
 
-.footerIFantasy ul li{
+.footerIFantasy ul li {
     margin: 0 1em;
 }
 
-.footerIFantasy ul li:hover{
-    color: #d6b363 ;
+.footerIFantasy ul li:hover {
+    color: #FEED17;
 }
 
-.footerIFantasy ul svg{
+.footerIFantasy ul svg {
     font-size: 1.5em;
     cursor: pointer;
     color: #fefefe;
 }
 
-.footerIFantasy ul svg:hover{
+.footerIFantasy ul svg:hover {
     cursor: pointer;
-    color: #d6b363;
+    color: #FEED17;
 }
 
+
+
+.footerExpoArte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #048ABF;
+    color: #fefefe;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+}
+
+.footerExpoArte img {
+    width: 4em;
+    height: auto;
+}
+
+.footerExpoArte ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+.footerExpoArte ul li {
+    margin: 0 1em;
+}
+
+.footerExpoArte ul li:hover {
+    color: #FEED17;
+}
+
+.footerExpoArte ul svg {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fefefe;
+}
+
+.footerExpoArte ul svg:hover {
+    cursor: pointer;
+    color: #FEED17;
+}
+
+
+.footerIFashion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+}
+
+.footerIFashion img {
+    width: 4em;
+    height: auto;
+}
+
+.footerIFashion ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+.footerIFashion ul li {
+    margin: 0 1em;
+}
+
+.footerIFashion ul li:hover {
+    color: #FEED17;
+}
+
+.footerIFashion ul svg {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.footerIFashion ul svg:hover {
+    cursor: pointer;
+    color: #FEED17;
+}
