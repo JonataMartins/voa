@@ -37,6 +37,7 @@
     height: 100vh;
     margin-top: 6em;
     align-items: center;
+    min-height: 65vh;
 
 }
 

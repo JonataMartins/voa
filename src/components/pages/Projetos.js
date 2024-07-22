@@ -22,8 +22,6 @@ function Projetos() {
 
     }
 
-
-
     return (
 
         <section className={styles.Projetos}>
@@ -31,7 +29,7 @@ function Projetos() {
 
             <div className={styles.todosCards}>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.imagem1}>
 
@@ -50,7 +48,7 @@ function Projetos() {
 
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.expo}>
 
@@ -68,7 +66,8 @@ function Projetos() {
 
                 </div>
 
-                <div className={styles.card}>
+                
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagemabacaxi}>
                         <img className={styles.image} src={abacaxi} alt='Logo Abacaxi de Ouro' />
                     </div>
@@ -80,13 +79,10 @@ function Projetos() {
 
                         <Link target='_blank' to={"https://abacaxideouro.netlify.app"}><button onClick={subir} className={styles.bAbacaxi}>Veja mais</button></Link>
 
-                        
-                        
-
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.ifashion}>
                         <h2>IF<span>ashion</span></h2>
@@ -99,7 +95,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagem1}>
                         <img src={historia} alt='Logo Abacaxi de Ouro' />
                     </div>
@@ -115,7 +111,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.jardim}>
                         <h2>Campus Jardim</h2>
@@ -128,8 +124,8 @@ function Projetos() {
                         <img className={styles.image} src={jardim} alt='Pessoa' />
                     </div>
                 </div>
-
-                <div className={styles.card}>
+ 
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagem1}>
                         <img src={cine} alt='Logo Abacaxi de Ouro' />
                     </div>
@@ -144,7 +140,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.livros}>
                         <h2>Literatura de Jovens para Jovens</h2>
@@ -160,7 +156,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagem1}>
                         <img src={visita} alt='Logo Abacaxi de Ouro' />
                     </div>
@@ -180,7 +176,7 @@ function Projetos() {
                 <h1>----Projetos Pontuais----</h1>
 
 
-                <div className={styles.card}>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagemifantasy}>
                         <img className={styles.image} src={ifantasy} alt='Pessoa' />
                     </div>
@@ -191,7 +187,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
                     <div className={styles.make}>
                         <h2>Criarte</h2>
@@ -206,7 +202,7 @@ function Projetos() {
                     </div>
                 </div>
 
-                <div className={styles.card}>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagemifantasy}>
                         <img className={styles.image} src={pascoa} alt='Pessoa' />
                     </div>

@@ -4,82 +4,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  max-width: 100%;
-  min-width: 100%;
-  height: 90vh;
-  margin-top: 3em;
+
 }
 
 .IFashion h1 {
-  text-align: center;
-  margin-top: 1.4em;
-  margin-bottom: 1em;
-  color: #ffffff;
+
+color: #ffffff;
   font-family: 'Sacramento', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  backdrop-filter: blur(50px);
-}
 
-.IFashion span {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.IFashion img {
-  height: auto;
-  width: 50%;
-  border-radius: 3%;
-  margin: auto;
 }
 
 .IFashion p {
   color: #ffffff;
-  text-indent: 4em;
   text-align: justify;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1em;
-  backdrop-filter: blur(50px);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.IFashion div {
-
-  display: flex;
-  flex-direction: row;
-  backdrop-filter: blur(50px);
-  padding: 0.5em;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 2em;
-  height: auto;
 
 }
 
-
-@media (max-width: 1050px) {
-  .IFashion div {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    height: auto;
-  }
-
-  .IFashion img {
-    height: auto;
-    width: 100%;
-    margin-bottom: 1em;
-  }
-
-  .IFashion p {
-    margin: 0;
-    padding: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .IFashion {
-
-    height: auto;
-
-  }
-
+.IFashion .galeria img{
+  object-position: center;
 }
