@@ -140,6 +140,10 @@ span{
     text-align: justify;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
@@ -153,6 +157,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
+
 
 }
 
@@ -180,6 +185,8 @@ span{
 .card p {
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -222,7 +229,7 @@ span{
 /* Aqui começa toda configuração do Arte de Caderno -----------------------------------------------------------------*/
 
 .arte {
-    background-image: url(../../img/projetos/papel.png);
+    background: linear-gradient(rgba(117, 117, 117, 0.267), rgba(117, 117, 117, 0.267)), url(../../img/projetos/papel.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 55%;
@@ -230,6 +237,8 @@ span{
     color: black;
     align-items: center;
     text-align: center;
+    
+    
 }
 
 .arte h2 {
@@ -243,10 +252,12 @@ span{
 }
 
 .arte p {
-    height: 50%;
+
     text-align: justify;
     margin-left: 3.8em;
     margin-right: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
 
