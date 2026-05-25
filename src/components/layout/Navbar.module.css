@@ -48,6 +48,7 @@
 
 .item,
 .itemIFantasy,
+.itemCantoCoral,
 .itemIFashion,
 .itemExpoArte {
     margin-right: 1em;
@@ -190,4 +191,36 @@ li {
 
 .navbarExpoArte .itemExpoArte a:hover {
     color: #035757;
+}
+
+/*CantoCoral */
+
+.itemCantoCoral a {
+    font-size: 1em;
+    color: #fefefe;
+    text-decoration: none;
+    font-family: 'Pacifico', 'Fasthand';
+}
+
+.itemCantoCoral a:hover {
+    color: #585858;
+}
+
+.navbarCantoCoral {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    transition: all ease 0.4s;
+    height: 5em;
+    background-color: #000000;
+
+}
+
+.navbarCantoCoral .itemCantoCoral a:hover {
+    color: #585858;
 }

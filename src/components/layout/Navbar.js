@@ -30,6 +30,12 @@ function Navbar( {acao}) {
         na = styles.navbarExpoArte;
     }
 
+    if(local === "/CantoCoral"){
+        l = 4
+        na = styles.navbarCantoCoral
+
+    }
+
 
     function subir (){
         window.scrollTo(0, 0);
@@ -64,6 +70,9 @@ function Navbar( {acao}) {
                     <li onClick={subir}  className={l === 3 ? styles.itemExpoArte : styles.itemH}><Link to="/Projetos">Projetos</Link></li>
                     <li onClick={subir}  className={l === 3 ? styles.itemExpoArte : styles.itemH}><Link to="/ExpoArte">ExpoArte</Link></li>
 
+                    <li onClick={subir}  className={l === 4 ? styles.itemCantoCoral : styles.itemH}><Link to="/">Voa</Link></li>
+                    <li onClick={subir}  className={l === 4 ? styles.itemCantoCoral : styles.itemH}><Link to="/Projetos">Projetos</Link></li>
+                    <li onClick={subir}  className={l === 4 ? styles.itemCantoCoral : styles.itemH}><Link to="/CantoCoral">Canto Coral</Link></li>
 
                 </ul>          
             

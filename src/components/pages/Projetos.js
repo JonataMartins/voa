@@ -14,6 +14,7 @@ import jardim from '../../img/projetos/jardim.jpg'
 import cine from '../../img/projetos/Cine.webp'
 import livros from '../../img/projetos/livros.jpg'
 import visita from '../../img/projetos/visita.jpg'
+import cantoCoral from '../../img/projetos/cantoCoral.jpg'
 
 function Projetos() {
 
@@ -113,15 +114,16 @@ function Projetos() {
 
                 <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
 
-                    <div className={styles.jardim}>
-                        <h2>Campus Jardim</h2>
-                        <p>O Campus Jardim surgiu da necessidade de humanizar o campus de Poços de Caldas do IFSULDEMINAS, que em 2015, construído sobre um aterro encontrava-se completamente desprovido de qualquer vegetação e movimentações para implementar a criação de um paisagismo, que gerasse cobertura e melhor aproveitamento do solo, conforto e acolhimento a comunidade escolar.
+                    <div className={styles.cantoCoral}>
+                        <h2>Música para todos - Canto Coral </h2>
+                        <p>A prática coral é uma forma acessível e inclusiva de vivência musical, utilizando a voz como instrumento principal. Além de promover integração social, disciplina e sensibilidade artística, o canto coletivo contribui para o desenvolvimento cognitivo, emocional e social. Em Poços de Caldas, a formação coral fortalece o acesso à cultura e as ações extensionistas do IFSULDEMINAS – Campus Poços de Caldas, alinhando-se às políticas de democratização cultural e ao compromisso institucional com a comunidade.
                             <span className={styles.ocult}></span>
                         </p>
+                        <Link to={"/CantoCoral"}><button onClick={subir} className={styles.bIfashion}>Veja mais</button></Link>
 
                     </div>
-                    <div className={styles.imagem2} >
-                        <img className={styles.image} src={jardim} alt='Pessoa' />
+                    <div className={styles.imagemCantoCoral} >
+                        <img src={cantoCoral} alt='Pessoa' />
                     </div>
                 </div>
  
@@ -152,7 +154,7 @@ function Projetos() {
 
                     </div>
                     <div className={styles.imagem2} >
-                        <img className={styles.image} src={livros} alt='Pessoa' />
+                        <img src={livros} alt='Pessoa' />
                     </div>
                 </div>
 
@@ -169,6 +171,20 @@ function Projetos() {
                             </span>
                         </p>
 
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
+
+                    <div className={styles.jardim}>
+                        <h2>Campus Jardim</h2>
+                        <p>O Campus Jardim surgiu da necessidade de humanizar o campus de Poços de Caldas do IFSULDEMINAS, que em 2015, construído sobre um aterro encontrava-se completamente desprovido de qualquer vegetação e movimentações para implementar a criação de um paisagismo, que gerasse cobertura e melhor aproveitamento do solo, conforto e acolhimento a comunidade escolar.
+                            <span className={styles.ocult}></span>
+                        </p>
+
+                    </div>
+                    <div className={styles.imagem2} >
+                        <img src={jardim} alt='Pessoa' />
                     </div>
                 </div>
 
