@@ -1,0 +1,26 @@
+.Visita {
+  color: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.Visita h1 {
+
+color: #ffffff;
+  font-family: 'Sacramento', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.Visita p {
+  color: #ffffff;
+  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.Visita .galeria img{
+  object-position: center;
+}

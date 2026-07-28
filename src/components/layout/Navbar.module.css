@@ -10,9 +10,7 @@
     transition: all ease 0.4s;
     height: 5em;
 
-
 }
-
 
 .ativaCor {
 
@@ -96,7 +94,6 @@ li {
 
 }
 
-
 /*ITEM TESTE*/
 
 .itemIFantasy a {
@@ -128,7 +125,6 @@ li {
 .navbarIFantasy .itemIFantasy a:hover {
     color: #d6b363;
 }
-
 
 /*IFashion */
 
@@ -162,7 +158,6 @@ li {
     color: #585858;
 }
 
-
 /*ExpoArte */
 
 .itemExpoArte a {
@@ -171,8 +166,6 @@ li {
     text-decoration: none;
     font-family: 'Pacifico', 'Fasthand';
 }
-
-
 
 .navbarExpoArte {
     margin: 0 auto;
@@ -222,5 +215,37 @@ li {
 }
 
 .navbarCantoCoral .itemCantoCoral a:hover {
+    color: #585858;
+}
+
+/*Visita */
+
+.itemVisita a {
+    font-size: 1em;
+    color: #fefefe;
+    text-decoration: none;
+    font-family: 'Pacifico', 'Fasthand';
+}
+
+.itemVisita a:hover {
+    color: #585858;
+}
+
+.navbarVisita {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    transition: all ease 0.4s;
+    height: 5em;
+    background-color: #256615;
+
+}
+
+.navbarVisita .itemVisita a:hover {
     color: #585858;
 }

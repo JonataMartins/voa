@@ -9,6 +9,7 @@ import IFantasy from './components/pages/IFantasy';
 import IFashion from './components/pages/IFashion';
 import ExpoArte from './components/pages/ExpoArt';
 import CantoCoral from './components/pages/CantoCoral';
+import Visita from './components/pages/Visita';
 
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
@@ -52,6 +53,7 @@ function App() {
           <Route exact path="/IFashion" element={<IFashion />} />
           <Route exact path="/ExpoArte" element={<ExpoArte />} />
           <Route exact path="/CantoCoral" element={<CantoCoral />} />
+          <Route exact path="/Visita" element={<Visita />} />
 
         </Routes>
       </Container>

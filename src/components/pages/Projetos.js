@@ -160,7 +160,7 @@ function Projetos() {
 
                 <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" className={styles.card}>
                     <div className={styles.imagem1}>
-                        <img src={visita} alt='Logo Abacaxi de Ouro' />
+                        <img src={visita} alt='garota olhando em um microscópio' />
                     </div>
                     <div className={styles.visita}>
                         <h2>Visitas Didáticas</h2>
@@ -170,6 +170,7 @@ function Projetos() {
                             <span className={styles.ocult}>
                             </span>
                         </p>
+                        <Link to={"/Visita"}><button onClick={subir} className={styles.bIfashion}>Veja mais</button></Link>
 
                     </div>
                 </div>
