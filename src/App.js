@@ -43,7 +43,7 @@ function App() {
 
       <Navbar acao={ativaCor} />
 
-      <Container customClass="min-height">
+      <Container>
         <Routes>
 
           <Route exact path="/" element={<Home />} />

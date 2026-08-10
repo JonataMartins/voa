@@ -15,7 +15,7 @@ function Footer() {
 
             </ul>
 
-            <p className={styles.copy}><span>Voa</span> &copy; 2024 </p>
+            <p className={styles.copy}><span>Voa</span> &copy; 2026 </p>
             <Link target="_blank" to={"https://portal.pcs.ifsuldeminas.edu.br"}><img src={logoIF} alt="Logo do IF" /></Link>
         </footer>
     )

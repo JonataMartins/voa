@@ -2,6 +2,7 @@
     scroll-behavior: initial;
     width: 100%;
     max-width: 100%;
+    min-height: 89vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
