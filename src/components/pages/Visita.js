@@ -2,7 +2,7 @@ import React from 'react';
 import Base from '../layout/Base';
 
 import styles from './Visita.module.css'
-import capa from '../../img/logo_Visitante.png'
+import capa from '../../img/logo_Visitante-Photoroom.png'
 
 import img1 from '../../img/galeriaVisita/img1.jpeg'
 import img2 from '../../img/galeriaVisita/img2.jpeg'

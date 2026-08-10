@@ -4,51 +4,11 @@ import logoIF from '../../img/logo_IF.png'
 
 import styles from './Footer.module.css';
 
-var local = (window.location.pathname);
-var na = styles.footer;
-
-if (local === "/") {
-    na = styles.footer;
-}
-
-if (local === "/sobre") {
-    na = styles.footer;
-}
-
-if (local === "/projetos") {
-    na = styles.footer;
-
-}
-
-if (local === "/IFantasy") {
-    na = styles.footerIFantasy;
-}
-
-if (local === "/IFantasyGaleria") {
-    na = styles.footerIFantasy;
-}
-
-if (local === "/ExpoArte") {
-    na = styles.footerExpoArte;
-}
-
-if (local === "/ExpoArteGaleria") {
-    na = styles.footerExpoArte;
-}
-
-if (local === "/IFashion") {
-    na = styles.footerIFashion;
-}
-
-if (local === "/IFashionGaleria") {
-    na = styles.footerIFashion;
-}
-
 function Footer() {
 
     return (
 
-        <footer className={na}>
+        <footer className={styles.footer}>
             <ul>
                 <li><Link target="_blank" to={"https://www.facebook.com/laboratoriovoaif"}><FaFacebook /></Link> </li>
                 <li><Link target="_blank" to={"https://www.instagram.com/laboratorio.voa/"}><FaInstagram /></Link></li>

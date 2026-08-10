@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import styles from './Navbar.module.css';
 
@@ -6,41 +6,8 @@ import logo from '../../img/logo_voa.png';
 
 function Navbar({ acao }) {
 
-    const location = useLocation();
-    const local = location.pathname;
-
     let l = 0;
     let na = styles.navbar;
-
-    // if (local === "/" || local === "/Sobre" || local === "/Projetos") {
-    //     l = 0;
-    //     na = styles.navbar;
-    // }
-
-    // if (local === "/IFantasy") {
-    //     l = 1;
-    //     na = styles.navbarIFantasy;
-    // }
-
-    // if (local === "/IFashion") {
-    //     l = 2;
-    //     na = styles.navbarIFashion;
-    // }
-
-    // if (local === "/ExpoArte") {
-    //     l = 3;
-    //     na = styles.navbarExpoArte;
-    // }
-
-    // if (local === "/CantoCoral") {
-    //     l = 4;
-    //     na = styles.navbarCantoCoral;
-    // }
-
-    // if (local === "/Visita") {
-    //     l = 5;
-    //     na = styles.navbarVisita;
-    // }
 
     function subir() {
         window.scrollTo(0, 0);
