@@ -1,18 +1,24 @@
-/*Importação de fonts*/
+/* Importação de fonts */
 
 @font-face {
   font-family: "handraw";
-  src: url(../../fonts/HandrawnColorKid.otf);
+  src: url("../../fonts/HandrawnColorKid.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Sketch";
-  src: url(../../fonts/Sketching\ Universe.otf);
+  src: url("../../fonts/Sketching\ Universe.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "fantasy";
-  src: url(../../fonts/FANTASY\ MAGIST.otf);
+  src: url("../../fonts/FANTASY\ MAGIST.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ----------------------------------------------
