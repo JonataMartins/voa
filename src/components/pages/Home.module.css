@@ -34,8 +34,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: calc(100vh - 6em);
-  margin-top: 6em;
+  margin-top: 5em;
   align-items: center;
   box-sizing: border-box;
 }
@@ -71,14 +70,13 @@
 }
 
 .logo {
-  width: 40em;
-  max-width: 90vw;
   height: auto;
   border-radius: 1em;
   backdrop-filter: blur(20px);
   margin: 0;
   padding: 1px;
   box-sizing: border-box;
+  
 }
 
 .logo img {
@@ -136,7 +134,7 @@
 /* Desktops e Monitores Grandes (Escala contínua a partir de 1131px) */
 @media (min-width: 1131px) {
   .logo {
-    width: 50vw;
+    width: 30vw;
     max-width: 1200px; /* Impede estouro visual em telas Ultrawide/4K */
   }
 }

@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: initial;
     flex-wrap: wrap;
-
     margin-top: 4em;
     padding: 2em;
     height: auto;
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     color: #ffffff;
