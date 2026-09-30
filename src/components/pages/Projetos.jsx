@@ -53,7 +53,7 @@ const projetos = [
     imagem: historia,
     descricao:
       "Esse Curso oferece conteúdo de História da Arte e oportuniza a experimentação e aprendizado da pintura através do ensino da técnica junto com a prática.",
-    link: "#",
+    
   },
   {
     titulo: "Música para todos - Canto Coral",
@@ -67,14 +67,14 @@ const projetos = [
     imagem: cine,
     descricao:
       "Projeto contínuo do Laboratório VOA que utiliza a produção cinematográfica com propósito educativo para abordar temas transversais.",
-    link: "#",
+    
   },
   {
     titulo: "Literatura de Jovens para Jovens",
     imagem: livros,
     descricao:
       "O projeto surgiu em 2019 e tem como objetivo fomentar no público jovem a produção de literatura e o apreço pela leitura através da produção e publicação de contos.",
-    link: "#",
+    
   },
   {
     titulo: "Visitas Didáticas",
@@ -88,7 +88,7 @@ const projetos = [
     imagem: jardim,
     descricao:
       "O Campus Jardim surgiu da necessidade de humanizar o campus de Poços de Caldas do IFSULDEMINAS, criando paisagismo, cobertura e melhor aproveitamento do solo.",
-    link: "#",
+    
   },
 ];
 
@@ -105,17 +105,16 @@ const projetosPontuais = [
     imagem: make,
     descricao:
       "Curso de capacitação em maquiagem artística e social para a profissionalização e inserção de pessoas em situação de vulnerabilidade no mundo do trabalho.",
-    link: "#",
+    
   },
   {
     titulo: "Caça ao Tesouro",
     imagem: pascoa,
     descricao:
       "A Caça ao Tesouro é uma ação pontual que se tornou uma tradição dentro do IFSULDEMINAS câmpus Poços de Caldas.",
-    link: "#",
+    
   },
 ];
-
 
 function CardProjeto({ projeto, index }) {
   function subir() {
@@ -142,48 +141,40 @@ function CardProjeto({ projeto, index }) {
 
         <p>{projeto.descricao}</p>
 
-        <Link
-          className={styles.botao}
-          to={projeto.link}
-          target={projeto.externo ? "_blank" : undefined}
-          rel={projeto.externo ? "noreferrer" : undefined}
-          onClick={subir}
-        >
-          Ver mais
-        </Link>
+        {projeto.link && (
+          <Link
+            className={styles.botao}
+            to={projeto.link}
+            target={projeto.externo ? "_blank" : undefined}
+            rel={projeto.externo ? "noreferrer" : undefined}
+            onClick={subir}
+          >
+            Ver mais
+          </Link>
+        )}
       </div>
     </div>
   );
 }
 
-
 function Projetos() {
   return (
     <section className={styles.projetos}>
-
       <h1>Projetos</h1>
 
       <div className={styles.cards}>
         {projetos.map((projeto) => (
-          <CardProjeto
-            key={projeto.titulo}
-            projeto={projeto}
-          />
+          <CardProjeto key={projeto.titulo} projeto={projeto} />
         ))}
       </div>
-
 
       <h1>Projetos Pontuais</h1>
 
       <div className={styles.cards}>
         {projetosPontuais.map((projeto) => (
-          <CardProjeto
-            key={projeto.titulo}
-            projeto={projeto}
-          />
+          <CardProjeto key={projeto.titulo} projeto={projeto} />
         ))}
       </div>
-
     </section>
   );
 }
