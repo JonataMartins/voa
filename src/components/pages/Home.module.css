@@ -28,11 +28,38 @@
   }
 }
 
+@keyframes nuvemMovimento1 {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(calc(-50% + 30px), -50%);
+  }
+}
+
+@keyframes nuvemMovimento2 {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(calc(-50% - 40px), -50%);
+  }
+}
+
 .logo {
   position: absolute;
   inset: 0;
-  pointer-events: none;
   overflow: hidden;
+}
+
+.logo img {
+  position: absolute;
+}
+
+.logoReveal {
+  pointer-events: auto;
 }
 
 .title span {
@@ -70,10 +97,6 @@
   margin-bottom: 1.5em;
 }
 
-.logo img {
-  position: absolute;
-}
-
 .back2 {
   z-index: 1;
   top: 50%;
@@ -104,6 +127,8 @@
   left: 40%;
   width: 95%;
   height: auto;
+  transform: translateX(calc(var(--mouse-x) * 10px));
+  transition: transform 0.15s ease-out;
 }
 
 .montanha3 {
@@ -142,6 +167,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: auto;
+  animation: nuvemMovimento2 7s linear infinite alternate;
 }
 
 .nuvem1 {
@@ -151,6 +177,7 @@
   transform: translate(-50%, -50%);
   width: 95%;
   height: auto;
+  animation: nuvemMovimento1 6s linear infinite alternate;
 }
 
 .porta {
@@ -160,6 +187,8 @@
   transform: translate(-70%, -50%);
   width: 90%;
   height: auto;
+  transform: translate(calc(-70% + (var(--mouse-x) * 10px)), -50%);
+  transition: transform 0.15s ease-out;
 }
 
 /* Elementos da frente (Objetos, Mão, Avião e Logo) */
@@ -184,9 +213,11 @@
 .mao {
   z-index: 14;
   top: 0;
-  left: 0;
+  left: -10px;
   width: 70%;
   height: auto;
+  transform: translateX(calc(var(--mouse-x) * 10px));
+  transition: transform 0.15s ease-out;
 }
 
 .aviao {
@@ -196,21 +227,257 @@
   transform: translate(-50%, -50%);
   width: 70%;
   height: auto;
+  transform: translate(calc(-50% + (var(--mouse-x) * 10px)), -50%);
+  transition: transform 0.15s ease-out;
 }
 
-.logo1, .logo2 {
-  width: 70%;
-  height: auto;
+/* Eleva o logoReveal acima dos outros elementos para garantir a captura do mouse */
+.logoReveal {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 70%;
+  aspect-ratio: 16 / 9;
+  z-index: 100;
+  pointer-events: auto;
+  --x: 50%;
+  --y: 50%;
+  --radius: 0px;
 }
 
-.logo1{
-  z-index: 16;
+.logo1,
+.logo2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
-.logo2{
-  z-index: 15;
-  visibility: hidden;
+.logo1 {
+  z-index: 1;
+}
+
+.logo2 {
+  z-index: 2;
+  /* Suporte para WebKit e padrão W3C */
+  -webkit-clip-path: circle(var(--radius) at var(--x) var(--y));
+  clip-path: circle(var(--radius) at var(--x) var(--y));
+}
+
+/* =========================================================
+   2560px — Monitores muito grandes
+   ========================================================= */
+@media (min-width: 1921px) {
+  .montanha1{
+    left: 35%;
+  }
+  .montanha3{
+    left: 65%;
+  }
+  .montanha1 ,.montanha2, .montanha3{
+    top: 57%;
+  }
+  .back2{
+    left: 65%;
+  }
+  .back4{
+    top: 40%;
+    left: 30%;
+  }
+}
+
+/* =========================================================
+   1440px — Desktop
+   ========================================================= */
+@media (min-width: 1201px) and (max-width: 1920px) {
+  
+}
+
+/* =========================================================
+   1024px — Notebook / Tablet landscape
+   ========================================================= */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .logo1,
+  .logo2 {
+    width: 200%;
+    height: auto;
+  }
+
+  .sol{
+    top: 25%;
+  }
+
+  .porta{
+    top: 80%;
+  }
+
+  .nuvem3{
+    visibility: hidden;
+  }
+}
+
+/* =========================================================
+   768px — Tablet
+   ========================================================= */
+@media (min-width: 426px) and (max-width: 768px) {
+  .logo1,
+  .logo2 {
+    width: 200%;
+    height: auto;
+  }
+
+  .sol{
+    top: 40%;
+  }
+
+  .porta{
+    top: 80%;
+  }
+
+  .nuvem3{
+    visibility: hidden;
+  }
+
+}
+
+/* =========================================================
+   425px — Celular grande
+   ========================================================= */
+@media (min-width: 376px) and (max-width: 425px) {
+  .logo1,
+  .logo2 {
+    width: 400%;
+    height: auto;
+  }
+
+  .back2 {
+    width: 600%;
+    height: auto;
+    top: 30%;
+  }
+
+  .nuvem3,
+  .montanha1,
+  .montanha3,
+  .livro,
+  .giz {
+    visibility: hidden;
+  }
+
+  .mao {
+    top: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  .porta {
+    width: 150%;
+    height: auto;
+    top: 80%;
+    left: 65%;
+  }
+
+  .nuvem1 {
+    top: 30%;
+  }
+
+  .nuvem2 {
+    top: 70%;
+  }
+}
+
+/* =========================================================
+   375px — Celular médio
+   ========================================================= */
+@media (min-width: 321px) and (max-width: 375px) {
+  .logo1,
+  .logo2 {
+    width: 400%;
+    height: auto;
+  }
+
+  .back2 {
+    width: 600%;
+    height: auto;
+    top: 30%;
+  }
+
+  .nuvem3,
+  .montanha1,
+  .montanha3,
+  .livro,
+  .giz {
+    visibility: hidden;
+  }
+
+  .mao {
+    top: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  .porta {
+    width: 150%;
+    height: auto;
+    top: 80%;
+    left: 65%;
+  }
+
+  .nuvem1 {
+    top: 30%;
+  }
+
+  .nuvem2 {
+    top: 70%;
+  }
+}
+
+/* =========================================================
+   320px — Celular pequeno
+   ========================================================= */
+@media (max-width: 320px) {
+  .logo1,
+  .logo2 {
+    width: 400%;
+    height: auto;
+  }
+
+  .back2 {
+    width: 600%;
+    height: auto;
+    top: 30%;
+  }
+
+  .nuvem3,
+  .montanha1,
+  .montanha3,
+  .livro,
+  .giz {
+    visibility: hidden;
+  }
+
+  .mao {
+    top: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  .porta {
+    width: 150%;
+    height: auto;
+    top: 80%;
+    left: 65%;
+  }
+
+  .nuvem1 {
+    top: 30%;
+  }
+
+  .nuvem2 {
+    top: 70%;
+  }
 }

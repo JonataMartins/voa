@@ -19,8 +19,41 @@ import porta from "../../img/home/porta.png";
 import sol from "../../img/home/sol.png";
 
 function Home() {
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    e.currentTarget.style.setProperty("--x", `${x}px`);
+    e.currentTarget.style.setProperty("--y", `${y}px`);
+    e.currentTarget.style.setProperty("--radius", `120px`);
+  };
+
+  const handleMouseLeave = (e) => {
+    e.currentTarget.style.setProperty("--radius", `0px`);
+  };
+
+  const handleParallax = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+
+    const mouseX = e.clientX - rect.left;
+    const centerX = rect.width / 2;
+
+    const x = (mouseX - centerX) / centerX;
+
+    e.currentTarget.style.setProperty("--mouse-x", x);
+  };
+
+  const handleParallaxLeave = (e) => {
+    e.currentTarget.style.setProperty("--mouse-x", 0);
+  };
+
   return (
-    <section className={styles.title}>
+    <section
+      className={styles.title}
+      onMouseMove={handleParallax}
+      onMouseLeave={handleParallaxLeave}
+    >
       <div className={styles.logo}>
         <h1>
           Bem vindo ao <span>VOA</span>
@@ -32,10 +65,16 @@ function Home() {
         <img className={styles.back4} src={back4} alt="Voa" />
         <img className={styles.giz} src={giz} alt="Voa" />
         <img className={styles.livro} src={livro} alt="Voa" />
-        <div className={styles.logoReveal}>
+
+        <div
+          className={styles.logoReveal}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <img className={styles.logo1} src={logo} alt="Voa" />
           <img className={styles.logo2} src={logo2} alt="Voa" />
         </div>
+
         <img className={styles.mao} src={mao} alt="Voa" />
         <img className={styles.montanha1} src={montanha1} alt="Voa" />
         <img className={styles.montanha2} src={montanha2} alt="Voa" />
