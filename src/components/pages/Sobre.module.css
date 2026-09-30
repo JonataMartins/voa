@@ -42,8 +42,8 @@
     margin-right: 3em;
     background-color: rgba(0, 0, 0, 0.274);
     backdrop-filter: blur(50px);
-    height: 90vh;
    border-radius: 1em;
+   height: 60%;
 }
 
 .row {

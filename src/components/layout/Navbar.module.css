@@ -9,7 +9,7 @@
     position: fixed;
     transition: all ease 0.4s;
     height: 5em;
-
+    z-index: 1000;
 }
 
 .ativaCor {
@@ -20,7 +20,7 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.9);
+
     padding: 1em;
     width: 100%;
     transition: all ease 0.4s;
@@ -242,7 +242,6 @@ li {
     position: fixed;
     transition: all ease 0.4s;
     height: 5em;
-    background-color: #256615;
 
 }
 
