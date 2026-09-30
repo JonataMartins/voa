@@ -44,6 +44,7 @@ h2 {
   background-repeat: no-repeat;
   border-radius: 20px;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .card:hover {
@@ -67,6 +68,38 @@ h2 {
   object-fit: contain;
 }
 
+.estatua1 {
+  width: 50%;
+  height: auto;
+  position:fixed;
+  top: 50%;
+  left: -20%;
+}
+
+.estatua2 {
+  width: 50%;
+  height: auto;
+  position:fixed;
+  top: 50%;
+  left: 65%;
+}
+
+.anjo1{
+  width: 15%;
+  height: auto;
+  position: fixed;
+  top: 5%;
+  left: 1%;
+}
+
+.anjo2{
+  width: 20%;
+  height: auto;
+  position: fixed;
+  top: 5%;
+  left: 80%;
+}
+
 /* FITA */
 
 .fita {
@@ -76,7 +109,6 @@ h2 {
   height: 25px;
   background: #e8d8a8;
   opacity: 0.9;
-  z-index: 2;
   clip-path: polygon(2% 5%, 98% 0%, 100% 90%, 3% 100%);
 }
 
@@ -152,5 +184,133 @@ h2 {
   .card {
     width: 100%;
     max-width: 450px;
+  }
+}
+
+/* =========================
+   320px até 374px
+========================= */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .estatua1 {
+    width: 100%;
+    top: 80%;
+    left: -30%;
+  }
+
+  .estatua2 {
+    width: 100%;
+    top: 80%;
+    left: 30%;
+  }
+
+  .anjo1 {
+    width: 30%;
+    top: 5%;
+    left: 1%;
+  }
+
+  .anjo2 {
+    width: 50%;
+    top: 5%;
+    left: 60%;
+  }
+}
+
+
+
+
+/* =========================
+   768px até 1023px
+========================= */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .estatua1 {
+    width: 100%;
+    top: 60%;
+    left: -30%;
+  }
+
+  .estatua2 {
+    width: 100%;
+    top: 60%;
+    left: 30%;
+  }
+
+  .anjo1 {
+    width: 30%;
+    top: 5%;
+    left: 1%;
+  }
+
+  .anjo2 {
+    width: 40%;
+    top: 5%;
+    left: 70%;
+  }
+}
+
+/* =========================
+   1440px até 2559px
+========================= */
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+
+  .estatua1 {
+    width: 100%;
+    top: 50%;
+    left: -35%;
+  }
+
+  .estatua2 {
+    width: 100%;
+    top: 50%;
+    left: 30%;
+  }
+
+  .anjo1 {
+    width: 40%;
+    top: 5%;
+    left: -10%;
+  }
+
+  .anjo2 {
+    width: 40%;
+    top: 5%;
+    left: 70%;
+  }
+}
+
+
+/* =========================
+   2560px ou maior
+========================= */
+
+@media (min-width: 2560px) {
+
+  .estatua1 {
+    width: 100%;
+    top: 50%;
+    left: -40%;
+  }
+
+  .estatua2 {
+    width: 100%;
+    top: 50%;
+    left: 30%;
+  }
+
+  .anjo1 {
+    width: 30%;
+    top: 5%;
+    left: -5%;
+  }
+
+  .anjo2 {
+    width: 30%;
+    top: 5%;
+    left: 70%;
   }
 }

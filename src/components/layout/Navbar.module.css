@@ -9,7 +9,7 @@
   position: fixed;
   transition: all ease 0.4s;
   height: 5em;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .ativaCor {

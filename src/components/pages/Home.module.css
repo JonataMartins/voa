@@ -331,6 +331,11 @@
    768px — Tablet
    ========================================================= */
 @media (min-width: 426px) and (max-width: 768px) {
+
+  .title{
+    pointer-events: none;
+  }
+  
   .logo1,
   .logo2 {
     width: 200%;
@@ -355,6 +360,11 @@
    425px — Celular grande
    ========================================================= */
 @media (min-width: 376px) and (max-width: 425px) {
+
+  .title{
+    pointer-events: none;
+  }
+
   .logo1,
   .logo2 {
     width: 400%;
@@ -401,6 +411,11 @@
    375px — Celular médio
    ========================================================= */
 @media (min-width: 321px) and (max-width: 375px) {
+
+.title{
+    pointer-events: none;
+  }
+
   .logo1,
   .logo2 {
     width: 400%;
@@ -447,6 +462,11 @@
    320px — Celular pequeno
    ========================================================= */
 @media (max-width: 320px) {
+
+  .title{
+    pointer-events: none;
+  }
+
   .logo1,
   .logo2 {
     width: 400%;
@@ -476,8 +496,9 @@
   .porta {
     width: 150%;
     height: auto;
-    top: 80%;
-    left: 65%;
+    top: 77%;
+    left: 30%;
+    transform: translate(-50%, -50%);
   }
 
   .nuvem1 {

@@ -17,6 +17,11 @@ import visita from "../../img/projetos/visita.jpg";
 import cantoCoral from "../../img/projetos/cantoCoral.jpg";
 import fundoCard from "../../img/projetos/fundoCard.png";
 
+import estatua1 from "../../img/projetos/estatua1.png";
+import estatua2 from "../../img/projetos/estatua2.png";
+import anjo1 from "../../img/projetos/anjo1.png";
+import anjo2 from "../../img/projetos/anjo2.png";
+
 const projetos = [
   {
     titulo: "Arte de Caderno",
@@ -175,6 +180,11 @@ function Projetos() {
           <CardProjeto key={projeto.titulo} projeto={projeto} />
         ))}
       </div>
+
+      <img className={styles.estatua1} src={estatua1} alt="estatua1" />
+      <img className={styles.estatua2} src={estatua2} alt="estatua2" />
+      <img className={styles.anjo1} src={anjo1} alt="anjo1" />
+      <img className={styles.anjo2} src={anjo2} alt="anjo2" />
     </section>
   );
 }
