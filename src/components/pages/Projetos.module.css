@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC");
 
+@font-face {
+  font-family: "bryndan";
+  src: url("../../fonts/BryndanWriteBook-nGPM.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .projetos {
   width: 100%;
@@ -7,11 +13,10 @@
   box-sizing: border-box;
 }
 
-.projetos h1 {
+.projetos h1, h2 {
   text-align: center;
   margin: 30px 0 50px;
-
-  font-family: "Pacifico", "Trebuchet MS", sans-serif;
+  font-family: "bryndan","Pacifico", "Trebuchet MS", sans-serif;
 }
 
 

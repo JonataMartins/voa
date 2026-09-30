@@ -48,6 +48,13 @@
   }
 }
 
+@font-face {
+  font-family: "bryndan";
+  src: url("../../fonts/BryndanWriteBook-nGPM.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo {
   position: absolute;
   inset: 0;
@@ -75,7 +82,7 @@
 .title h1,
 .title p {
   color: #020101;
-  font-family:
+  font-family:"bryndan",
     "Pacifico", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
